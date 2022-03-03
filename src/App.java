@@ -199,90 +199,117 @@ import javax.swing.JOptionPane;
 // * Working with nested loops
 
 // public class App {
-//     public static void main(String[] args) throws Exception {
-//         Scanner scanner = new Scanner(System.in);
+// public static void main(String[] args) throws Exception {
+// Scanner scanner = new Scanner(System.in);
 
-//         int rows;
-//         int columns;
-//         String symbol = "";
+// int rows;
+// int columns;
+// String symbol = "";
 
-//         System.out.println("How many rows?");
-//         rows = scanner.nextInt();
-//         System.out.println("How many columns?");
-//         columns = scanner.nextInt();
-//         System.out.println("What symbol do you want to use?");
-//         symbol = scanner.next();
+// System.out.println("How many rows?");
+// rows = scanner.nextInt();
+// System.out.println("How many columns?");
+// columns = scanner.nextInt();
+// System.out.println("What symbol do you want to use?");
+// symbol = scanner.next();
 
-//         for (int i = 0; i < rows; i++) {
-//             System.out.println();
-//             for (int j = 0; j < columns; j++) {
-//                 System.out.print(symbol);
-//             }
-//         }
-//     }
+// for (int i = 0; i < rows; i++) {
+// System.out.println();
+// for (int j = 0; j < columns; j++) {
+// System.out.print(symbol);
+// }
+// }
+// }
 // }
 
 // * Working with arrays
 
 // public class App {
-//     public static void main(String[] args) throws Exception {
-//         String[] cars = { "Camaro", "Corvette", "Mustang", "Charger" };
+// public static void main(String[] args) throws Exception {
+// String[] cars = { "Camaro", "Corvette", "Mustang", "Charger" };
 
-//         for (int i = 0; i < cars.length; i++) {
-//             System.out.println(cars[i]);
-//         }
+// for (int i = 0; i < cars.length; i++) {
+// System.out.println(cars[i]);
+// }
 
-//     }
+// }
 // }
 
 // * Working with 2D arrays
 
 // public class App {
-//     public static void main(String[] args) throws Exception {
-//         String[][] cars = { { "Camaro", "Corvette", "Mustang", "Charger" },
-//                 { "Chevy", "Cadillac", "Chrysler", "Dodge" },
-//                 { "Ford", "GMC", "Jeep", "Lincoln" } };
+// public static void main(String[] args) throws Exception {
+// String[][] cars = { { "Camaro", "Corvette", "Mustang", "Charger" },
+// { "Chevy", "Cadillac", "Chrysler", "Dodge" },
+// { "Ford", "GMC", "Jeep", "Lincoln" } };
 
-//         for (int i = 0; i < cars.length; i++) {
-//             System.out.println();
-//             for (int j = 0; j < cars[i].length; j++) {
-//                 System.out.print(cars[i][j] + " ");
-//             }
-//         }
-//     }
+// for (int i = 0; i < cars.length; i++) {
+// System.out.println();
+// for (int j = 0; j < cars[i].length; j++) {
+// System.out.print(cars[i][j] + " ");
+// }
+// }
+// }
 // }
 
-// * Working with wrapper classes 
+// * Working with wrapper classes
 
 // public class App {
-//     public static void main(String[] args) throws Exception {
-//         Boolean a = true;
-//         Character b = '@';
-//         Double c = 3.14;
-//         String d = "Hello";
+// public static void main(String[] args) throws Exception {
+// Boolean a = true;
+// Character b = '@';
+// Double c = 3.14;
+// String d = "Hello";
 
-//         if (a == true) {
-//             System.out.println("a is true");
-//         }
-//     }
+// if (a == true) {
+// System.out.println("a is true");
+// }
+// }
 // }
 
 // * array lists in java
 
+// public class App {
+// public static void main(String[] args) throws Exception {
+// ArrayList<String> cars = new ArrayList<String>();
+
+// cars.add("Camaro");
+// cars.add("Corvette");
+// cars.add("Mustang");
+// cars.add("Charger");
+
+// cars.set(0, "Test");
+// cars.remove(2);
+
+// for (int i = 0; i < cars.size(); i++) {
+// System.out.println(cars.get(i));
+// }
+// }
+// }
+
+// * 2d array lists in java
 public class App {
     public static void main(String[] args) throws Exception {
-        ArrayList<String> cars = new ArrayList<String>();
+        ArrayList<ArrayList<String>> groceryList = new ArrayList<ArrayList<String>>();
 
-        cars.add("Camaro");
-        cars.add("Corvette");
-        cars.add("Mustang");
-        cars.add("Charger");
+        ArrayList<String> bakeryList = new ArrayList<String>();
+        bakeryList.add("Bread");
+        bakeryList.add("Cake");
+        bakeryList.add("Cookie");
 
-        cars.set(0, "Test");
-        cars.remove(2);
+        ArrayList<String> produceList = new ArrayList<String>();
+        produceList.add("Apple");
+        produceList.add("Banana");
+        produceList.add("Orange");
 
-        for (int i = 0; i < cars.size(); i++) {
-            System.out.println(cars.get(i));
-        }
+        ArrayList<String> drinksList = new ArrayList<String>();
+        drinksList.add("Coffee");
+        drinksList.add("Tea");
+
+        groceryList.add(bakeryList);
+        groceryList.add(produceList);
+        groceryList.add(drinksList);
+
+        System.out.println(groceryList.get(0));
     }
 }
