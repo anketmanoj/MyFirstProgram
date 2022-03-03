@@ -316,18 +316,34 @@ import javax.swing.JOptionPane;
 
 // * working with for each loop
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         // String[] animals = { "Cat", "Dog", "Bird", "Fish" };
+
+//         ArrayList<String> animals = new ArrayList<String>();
+//         animals.add("Cat");
+//         animals.add("Dog");
+//         animals.add("Bird");
+//         animals.add("Fish");
+
+//         for (String animal : animals) {
+//             System.out.println(animal);
+//         }
+//     }
+// }
+
+// * methods in java
+
 public class App {
     public static void main(String[] args) throws Exception {
-        // String[] animals = { "Cat", "Dog", "Bird", "Fish" };
+        int x = 4;
+        int y = 4;
 
-        ArrayList<String> animals = new ArrayList<String>();
-        animals.add("Cat");
-        animals.add("Dog");
-        animals.add("Bird");
-        animals.add("Fish");
-
-        for (String animal : animals) {
-            System.out.println(animal);
-        }
+        System.out.println(add(x, y));
     }
+
+    public static int add(int x, int y) {
+        return x + y;
+    }
+
 }
