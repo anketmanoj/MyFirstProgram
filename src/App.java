@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 // public class App {
 // public static void main(String[] args) throws Exception {
 
@@ -113,5 +115,22 @@
 // // x = Math.abs();
 
 // System.out.println(y);
+// }
+// }
+
+// * working with if statements
+
+// public class App {
+// public static void main(String[] args) throws Exception {
+// int age = Integer.parseInt(JOptionPane.showInputDialog(null, "How old are
+// you?"));
+
+// if (age >= 18) {
+// System.out.println("You are old enough to vote!");
+// } else if (age == 17) {
+// System.out.println("You can vote next year!");
+// } else {
+// System.out.println("You can't vote yet!");
+// }
 // }
 // }
