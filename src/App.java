@@ -288,28 +288,46 @@ import javax.swing.JOptionPane;
 // }
 
 // * 2d array lists in java
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         ArrayList<ArrayList<String>> groceryList = new ArrayList<ArrayList<String>>();
+
+//         ArrayList<String> bakeryList = new ArrayList<String>();
+//         bakeryList.add("Bread");
+//         bakeryList.add("Cake");
+//         bakeryList.add("Cookie");
+
+//         ArrayList<String> produceList = new ArrayList<String>();
+//         produceList.add("Apple");
+//         produceList.add("Banana");
+//         produceList.add("Orange");
+
+//         ArrayList<String> drinksList = new ArrayList<String>();
+//         drinksList.add("Coffee");
+//         drinksList.add("Tea");
+
+//         groceryList.add(bakeryList);
+//         groceryList.add(produceList);
+//         groceryList.add(drinksList);
+
+//         System.out.println(groceryList.get(0));
+//     }
+// }
+
+// * working with for each loop
+
 public class App {
     public static void main(String[] args) throws Exception {
-        ArrayList<ArrayList<String>> groceryList = new ArrayList<ArrayList<String>>();
+        // String[] animals = { "Cat", "Dog", "Bird", "Fish" };
 
-        ArrayList<String> bakeryList = new ArrayList<String>();
-        bakeryList.add("Bread");
-        bakeryList.add("Cake");
-        bakeryList.add("Cookie");
+        ArrayList<String> animals = new ArrayList<String>();
+        animals.add("Cat");
+        animals.add("Dog");
+        animals.add("Bird");
+        animals.add("Fish");
 
-        ArrayList<String> produceList = new ArrayList<String>();
-        produceList.add("Apple");
-        produceList.add("Banana");
-        produceList.add("Orange");
-
-        ArrayList<String> drinksList = new ArrayList<String>();
-        drinksList.add("Coffee");
-        drinksList.add("Tea");
-
-        groceryList.add(bakeryList);
-        groceryList.add(produceList);
-        groceryList.add(drinksList);
-
-        System.out.println(groceryList.get(0));
+        for (String animal : animals) {
+            System.out.println(animal);
+        }
     }
 }
