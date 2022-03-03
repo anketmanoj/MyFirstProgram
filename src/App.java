@@ -236,17 +236,32 @@ import javax.swing.JOptionPane;
 
 // * Working with 2D arrays
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         String[][] cars = { { "Camaro", "Corvette", "Mustang", "Charger" },
+//                 { "Chevy", "Cadillac", "Chrysler", "Dodge" },
+//                 { "Ford", "GMC", "Jeep", "Lincoln" } };
+
+//         for (int i = 0; i < cars.length; i++) {
+//             System.out.println();
+//             for (int j = 0; j < cars[i].length; j++) {
+//                 System.out.print(cars[i][j] + " ");
+//             }
+//         }
+//     }
+// }
+
+// * Working with wrapper classes 
+
 public class App {
     public static void main(String[] args) throws Exception {
-        String[][] cars = { { "Camaro", "Corvette", "Mustang", "Charger" },
-                { "Chevy", "Cadillac", "Chrysler", "Dodge" },
-                { "Ford", "GMC", "Jeep", "Lincoln" } };
+        Boolean a = true;
+        Character b = '@';
+        Double c = 3.14;
+        String d = "Hello";
 
-        for (int i = 0; i < cars.length; i++) {
-            System.out.println();
-            for (int j = 0; j < cars[i].length; j++) {
-                System.out.print(cars[i][j] + " ");
-            }
+        if (a == true) {
+            System.out.println("a is true");
         }
     }
 }
