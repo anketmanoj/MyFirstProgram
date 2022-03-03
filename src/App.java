@@ -334,16 +334,28 @@ import javax.swing.JOptionPane;
 
 // * methods in java
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         int x = 4;
+//         int y = 4;
+
+//         System.out.println(add(x, y));
+//     }
+
+//     public static int add(int x, int y) {
+//         return x + y;
+//     }
+
+// }
+
+// * working on OOP in Java
+
 public class App {
     public static void main(String[] args) throws Exception {
-        int x = 4;
-        int y = 4;
+        Car myCar = new Car();
+        myCar.setMake("Ford");
 
-        System.out.println(add(x, y));
+        // System.out.println(myCar.make);
+        myCar.drive();
     }
-
-    public static int add(int x, int y) {
-        return x + y;
-    }
-
 }
