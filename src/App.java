@@ -83,3 +83,17 @@
 // System.out.println("The largest number is " + z);
 // }
 // }
+
+// * create a program to find the hypotenuse of a triangle
+import javax.swing.JOptionPane;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        double x = Double.parseDouble(JOptionPane.showInputDialog(null, "What is the length of this side? "));
+        double y = Double.parseDouble(JOptionPane.showInputDialog(null, "What is the length of this side?"));
+
+        double c = Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2)));
+
+        System.out.println("hypotenuse is " + c);
+    }
+}
