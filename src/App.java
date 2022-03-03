@@ -15,27 +15,39 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-// create a public class app that has a main method
+// // create a public class app that has a main method
+// public class App {
+//     // create a main method
+//     public static void main(String[] args) throws Exception {
+
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.println("What is your name?");
+//         String name = scanner.nextLine();
+
+//         System.out.println("What is your age?");
+//         int age = scanner.nextInt();
+//         scanner.nextLine();
+
+//         System.out.println("What is your favorite color?");
+//         String color = scanner.next();
+
+//         System.out.println(
+//                 "Hello, " + name + "!" + " You are " + age + " years old." + " Your favorite color is " + color + ".");
+
+//     }
+// }
+
+//* Expressions in Java
+
 public class App {
-    // create a main method
     public static void main(String[] args) throws Exception {
 
-        Scanner scanner = new Scanner(System.in);
+        double friends = 10;
+        friends = friends / 3;
 
-        System.out.println("What is your name?");
-        String name = scanner.nextLine();
-
-        System.out.println("What is your age?");
-        int age = scanner.nextInt();
-        scanner.nextLine();
-
-        System.out.println("What is your favorite color?");
-        String color = scanner.next();
-
-        System.out.println(
-                "Hello, " + name + "!" + " You are " + age + " years old." + " Your favorite color is " + color + ".");
-
+        System.out.println(friends);
     }
 }
