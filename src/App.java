@@ -85,15 +85,33 @@
 // }
 
 // * create a program to find the hypotenuse of a triangle
-import javax.swing.JOptionPane;
+// import javax.swing.JOptionPane;
 
-public class App {
-    public static void main(String[] args) throws Exception {
-        double x = Double.parseDouble(JOptionPane.showInputDialog(null, "What is the length of this side? "));
-        double y = Double.parseDouble(JOptionPane.showInputDialog(null, "What is the length of this side?"));
+// public class App {
+// public static void main(String[] args) throws Exception {
+// double x = Double.parseDouble(JOptionPane.showInputDialog(null, "What is the
+// length of this side? "));
+// double y = Double.parseDouble(JOptionPane.showInputDialog(null, "What is the
+// length of this side?"));
 
-        double c = Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2)));
+// double c = Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2)));
 
-        System.out.println("hypotenuse is " + c);
-    }
-}
+// System.out.println("hypotenuse is " + c);
+// }
+// }
+
+// * Working with random numbers
+// import java.util.Random;
+
+// public class App {
+// public static void main(String[] args) throws Exception {
+// Random random = new Random();
+
+// // int x = random.nextInt(6) + 1;
+// double y = random.nextDouble();
+
+// // x = Math.abs();
+
+// System.out.println(y);
+// }
+// }
