@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 // public class App {
@@ -192,3 +194,29 @@ import javax.swing.JOptionPane;
 // }
 // }
 // }
+
+// * Working with nested loops
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+
+        int rows;
+        int columns;
+        String symbol = "";
+
+        System.out.println("How many rows?");
+        rows = scanner.nextInt();
+        System.out.println("How many columns?");
+        columns = scanner.nextInt();
+        System.out.println("What symbol do you want to use?");
+        symbol = scanner.next();
+
+        for (int i = 0; i < rows; i++) {
+            System.out.println();
+            for (int j = 0; j < columns; j++) {
+                System.out.print(symbol);
+            }
+        }
+    }
+}
