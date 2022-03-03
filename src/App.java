@@ -223,13 +223,30 @@ import javax.swing.JOptionPane;
 
 // * Working with arrays
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         String[] cars = { "Camaro", "Corvette", "Mustang", "Charger" };
+
+//         for (int i = 0; i < cars.length; i++) {
+//             System.out.println(cars[i]);
+//         }
+
+//     }
+// }
+
+// * Working with 2D arrays
+
 public class App {
     public static void main(String[] args) throws Exception {
-        String[] cars = { "Camaro", "Corvette", "Mustang", "Charger" };
+        String[][] cars = { { "Camaro", "Corvette", "Mustang", "Charger" },
+                { "Chevy", "Cadillac", "Chrysler", "Dodge" },
+                { "Ford", "GMC", "Jeep", "Lincoln" } };
 
         for (int i = 0; i < cars.length; i++) {
-            System.out.println(cars[i]);
+            System.out.println();
+            for (int j = 0; j < cars[i].length; j++) {
+                System.out.print(cars[i][j] + " ");
+            }
         }
-
     }
 }
