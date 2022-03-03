@@ -156,28 +156,39 @@ import javax.swing.JOptionPane;
 // *working with logical operators
 
 // public class App {
-//     public static void main(String[] args) throws Exception {
-//         int temp = 70;
+// public static void main(String[] args) throws Exception {
+// int temp = 70;
 
-//         if (temp > 30) {
-//             System.out.println("It is hot outside");
-//         } else if (temp >= 20 && temp <= 30) {
-//             System.out.println("Its a nice day");
-//         } else {
-//             System.out.println("It is cold outside");
-//         }
-//     }
+// if (temp > 30) {
+// System.out.println("It is hot outside");
+// } else if (temp >= 20 && temp <= 30) {
+// System.out.println("Its a nice day");
+// } else {
+// System.out.println("It is cold outside");
+// }
+// }
 // }
 
 // * working with while loops
 
 // public class App {
-//     public static void main(String[] args) throws Exception {
-//         int x = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter a number"));
+// public static void main(String[] args) throws Exception {
+// int x = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter a
+// number"));
 
-//         while (x < 3) {
-//             System.out.println(x);
-//             x++;
-//         }
-//     }
+// while (x < 3) {
+// System.out.println(x);
+// x++;
+// }
+// }
+// }
+
+// * Working with for loops
+
+// public class App {
+// public static void main(String[] args) throws Exception {
+// for (int i = 0; i < 10; i++) {
+// System.out.println(i);
+// }
+// }
 // }
