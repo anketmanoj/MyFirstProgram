@@ -134,3 +134,21 @@ import javax.swing.JOptionPane;
 // }
 // }
 // }
+
+// * working with switch statements
+
+// public class App {
+// public static void main(String[] args) throws Exception {
+// String day = JOptionPane.showInputDialog(null, "What day is it?");
+
+// switch (day) {
+// case "Sunday":
+// System.out.println("Happy Sunday!");
+// break;
+
+// default:
+// System.out.println("Have a nice day!");
+// break;
+// }
+// }
+// }
