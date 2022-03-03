@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -253,15 +254,35 @@ import javax.swing.JOptionPane;
 
 // * Working with wrapper classes 
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         Boolean a = true;
+//         Character b = '@';
+//         Double c = 3.14;
+//         String d = "Hello";
+
+//         if (a == true) {
+//             System.out.println("a is true");
+//         }
+//     }
+// }
+
+// * array lists in java
+
 public class App {
     public static void main(String[] args) throws Exception {
-        Boolean a = true;
-        Character b = '@';
-        Double c = 3.14;
-        String d = "Hello";
+        ArrayList<String> cars = new ArrayList<String>();
 
-        if (a == true) {
-            System.out.println("a is true");
+        cars.add("Camaro");
+        cars.add("Corvette");
+        cars.add("Mustang");
+        cars.add("Charger");
+
+        cars.set(0, "Test");
+        cars.remove(2);
+
+        for (int i = 0; i < cars.size(); i++) {
+            System.out.println(cars.get(i));
         }
     }
 }
