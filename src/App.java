@@ -350,12 +350,26 @@ import javax.swing.JOptionPane;
 
 // * working on OOP in Java
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         Car myCar = new Car();
+//         myCar.setMake("Ford");
+
+//         // System.out.println(myCar.make);
+//         myCar.drive();
+//     }
+// }
+
+// * working with constructors in java
+
 public class App {
     public static void main(String[] args) throws Exception {
-        Car myCar = new Car();
-        myCar.setMake("Ford");
+        Human human = new Human("John", 20, 67.9);
+        Human human2 = new Human("Jane", 21, 68.9);
 
-        // System.out.println(myCar.make);
-        myCar.drive();
+        // System.out.println(human.name);
+        // System.out.println(human2.name);
+
+        human.eat();
     }
 }
