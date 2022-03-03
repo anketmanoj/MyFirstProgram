@@ -42,12 +42,29 @@
 
 //* Expressions in Java
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+
+//         double friends = 10;
+//         friends = friends / 3;
+
+//         System.out.println(friends);
+//     }
+// }
+
+// * basic GUI app
+import javax.swing.JOptionPane;
+
 public class App {
     public static void main(String[] args) throws Exception {
+        String name = JOptionPane.showInputDialog("What is your name?");
+        JOptionPane.showMessageDialog(null, "Hello, " + name + "!");
 
-        double friends = 10;
-        friends = friends / 3;
+        int age = Integer.parseInt(JOptionPane.showInputDialog("How old are you?"));
+        JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
 
-        System.out.println(friends);
+        double height = Double.parseDouble(JOptionPane.showInputDialog("How tall are you?"));
+        JOptionPane.showMessageDialog(null, "You are " + height + " inches tall.");
+
     }
 }
