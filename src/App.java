@@ -362,14 +362,24 @@ import javax.swing.JOptionPane;
 
 // * working with constructors in java
 
+// public class App {
+//     public static void main(String[] args) throws Exception {
+//         Human human = new Human("John", 20, 67.9);
+//         Human human2 = new Human("Jane", 21, 68.9);
+
+//         // System.out.println(human.name);
+//         // System.out.println(human2.name);
+
+//         human.eat();
+//     }
+// }
+
+// * 
+
+// * working with super keyword in java
+
 public class App {
     public static void main(String[] args) throws Exception {
-        Human human = new Human("John", 20, 67.9);
-        Human human2 = new Human("Jane", 21, 68.9);
-
-        // System.out.println(human.name);
-        // System.out.println(human2.name);
-
-        human.eat();
+        Hero hero1 = new Hero("Superman", 30, "Superhuman");
     }
 }
